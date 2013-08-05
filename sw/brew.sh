@@ -42,16 +42,37 @@ echo "Updating some tools, adding some others..."
 
 echo "Installing essential software..."
   #export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-  brew cask install dropbox
-  brew cask install the-unarchiver
-  brew cask install google-chrome
-  brew cask install vlc
-  brew cask install spotify
-  brew cask install open-office
-  brew cask install skype
-  brew cask install cyberduck
+  brew cask install air-server
+  brew cask install airfoil
+  brew cask install audio-hijack-pro
   brew cask install bartender
   brew cask install bettertouchtool
-  brew cask install coconutbattery
-  brew cask install daisydisk
+  brew cask install charles
+  brew cask install cyberduck
+  brew cask install disk-inventory-x
+  brew cask install dropbox
+  brew cask install evernote
+  brew cask install firefox
+  brew cask install flux
+  brew cask install meteorologist
+  brew cask install omni-graffle-pro
+  brew cask install one-password
+  brew cask install onyx
+  brew cask install quicksilver
+  brew cask install renamer
+  brew cask install spotify
+  brew cask install skitch
+  brew cask install skype
+  brew cask install super-duper
+  brew cask install textwrangler
+  brew cask install the-unarchiver
+  brew cask install time-machine-editor
+  brew cask install totalspaces
+  brew cask install transmission
+  brew cask install trim-enabler
+  brew cask install true-crypt
+  brew cask install vagrant
+  brew cask install vlc
+  brew cask install x-quartz
+  brew cask install xtra-finder
 

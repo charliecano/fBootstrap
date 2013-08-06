@@ -28,7 +28,7 @@ echo "Customizing misc OSX settins..."
   defaults write com.apple.menuextra.clock IsAnalog -bool false
 
 # Menu bar: show battery percentage
-  defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+#  defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 # Trackpad: enable tap to click for this user and for the login screen
   defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
@@ -45,7 +45,7 @@ defaults write com.apple.dock showAppExposeGestureEnabled -bool true
   defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 
 # Disable the "Are you sure you want to open this application?" dialog
-  defaults write com.apple.LaunchServices LSQuarantine -bool false
+#  defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Check for software updates daily, not just once per week
   defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
@@ -66,16 +66,16 @@ defaults write com.apple.dock showAppExposeGestureEnabled -bool true
   defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
 # Disable press-and-hold for keys in favor of key repeat
-  defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+#  defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Automatically illuminate built-in MacBook keyboard in low light
-  defaults write com.apple.BezelServices kDim -bool true
+#  defaults write com.apple.BezelServices kDim -bool true
 
 # Turn off keyboard illumination when computer is not used for 5 minutes
-  defaults write com.apple.BezelServices kDimTime -int 300
+#  defaults write com.apple.BezelServices kDimTime -int 300
 
 # Disable auto-correct
-  defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+#  defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Enable subpixel font rendering on non-Apple LCDs
   defaults write NSGlobalDomain AppleFontSmoothing -int 2
@@ -99,9 +99,9 @@ defaults write com.apple.dock showAppExposeGestureEnabled -bool true
   defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Disable disk image verification
-  defaults write com.apple.frameworks.diskimages skip-verify -bool true
-  defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
-  defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
+#  defaults write com.apple.frameworks.diskimages skip-verify -bool true
+#  defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
+#  defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 
 # Automatically open a new Finder window when a volume is mounted
   defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
@@ -116,16 +116,16 @@ defaults write com.apple.dock showAppExposeGestureEnabled -bool true
   defaults write com.apple.dock tilesize -int 36
 
 # Do not show indicator lights for open applications in the Dock
-  defaults write com.apple.dock show-process-indicators -bool false
+#  defaults write com.apple.dock show-process-indicators -bool false
 
 # Not only open apps in Dock (i need to mantain it in order to have folder links)
   defaults write com.apple.dock static-only -boolean false
 
 # But delete all predefined app links
- defaults delete com.apple.dock persistent-apps
+# defaults delete com.apple.dock persistent-apps
 
 # Predefined folders too... I will decide how I like them :P
- defaults delete com.apple.dock persistent-others
+# defaults delete com.apple.dock persistent-others
 
 # Simpler minimize effect
   defaults write com.apple.dock mineffect -string scale
@@ -149,7 +149,7 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://localhost${H
   defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
 # Don't show Dashboard as a Space
-  defaults write com.apple.dock dashboard-in-overlay -bool true
+#  defaults write com.apple.dock dashboard-in-overlay -bool true
 
 # Automatically hide and show the Dock
   defaults write com.apple.dock autohide -bool true
@@ -168,7 +168,7 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://localhost${H
   find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
 
 # Add iOS Simulator to Launchpad
-  ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app
+#  ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app
 
 # Set Safari's home page to `about:blank` for faster loading
   defaults write com.apple.Safari HomePage -string "about:blank"
@@ -177,13 +177,13 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://localhost${H
   defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 
 # Hide Safari's bookmarks bar by default
-  defaults write com.apple.Safari ShowFavoritesBar -bool false
+#  defaults write com.apple.Safari ShowFavoritesBar -bool false
 
 # Disable Safari's thumbnail cache for History and Top Sites
-  defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
+#  defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
 
 # Remove useless icons from Safari's bookmarks bar
-  defaults write com.apple.Safari ProxiesInBookmarksBar "()"
+#  defaults write com.apple.Safari ProxiesInBookmarksBar "()"
 
 # Enable the Develop menu and the Web Inspector in Safari
   defaults write com.apple.Safari IncludeDevelopMenu -bool true
@@ -197,7 +197,7 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://localhost${H
   defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Disable Local Time Machine
-  hash tmutil &> /dev/null && sudo tmutil disablelocal
+#  hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 # Use plain text mode for new TextEdit documents
   defaults write com.apple.TextEdit RichText -int 0
